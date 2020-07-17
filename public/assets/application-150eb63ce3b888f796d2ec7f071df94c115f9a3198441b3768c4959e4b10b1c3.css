@@ -1,0 +1,407 @@
+/*!
+ * YUI 3.5.0 - reset.css (http://developer.yahoo.com/yui/3/cssreset/)
+ * http://cssreset.com
+ * Copyright 2012 Yahoo! Inc. All rights reserved.
+ * http://yuilibrary.com/license/
+ */
+/*
+    TODO will need to remove settings on HTML since we can't namespace it.
+    TODO with the prefix, should I group by selector or property for weight savings?
+*/
+/* line 11, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+html {
+  color: #000;
+  background: #FFF;
+}
+
+/*
+  TODO remove settings on BODY since we can't namespace it.
+*/
+/*
+  TODO test putting a class on HEAD.
+      - Fails on FF.
+*/
+/* line 22, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 50, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 54, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+fieldset,
+img {
+  border: 0;
+}
+
+/*
+  TODO think about hanlding inheritence differently, maybe letting IE6 fail a bit...
+*/
+/* line 61, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+/* line 74, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+ol,
+ul {
+  list-style: none;
+}
+
+/* line 79, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+caption,
+th {
+  text-align: left;
+}
+
+/* line 83, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+/* line 92, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+q:before,
+q:after {
+  content: '';
+}
+
+/* line 96, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+
+/* to preserve line-height and selector appearance */
+/* line 102, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+sup {
+  vertical-align: text-top;
+}
+
+/* line 105, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+sub {
+  vertical-align: text-bottom;
+}
+
+/* line 108, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*to enable resizing for IE*/
+/* line 116, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+input,
+textarea,
+select {
+  *font-size: 100%;
+}
+
+/*because legend doesn't inherit in IE */
+/* line 122, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+legend {
+  color: #000;
+}
+
+/* YUI CSS Detection Stamp */
+/* line 126, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/reset.scss */
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+
+/* line 1, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio {
+  background-color: lightblue;
+  width: 100%;
+  height: 3700px;
+}
+/* line 5, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-space {
+  height: 20px;
+  width: 100%;
+}
+/* line 9, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-header {
+  width: 92%;
+  height: 220px;
+  background-color: #fff;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+/* line 15, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-header--text {
+  text-align: center;
+  padding-top: 3px;
+  font-size: 12px;
+}
+/* line 20, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-header--image {
+  text-align: center;
+  height: 130px;
+}
+/* line 23, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-header--image .macbook {
+  margin-top: 20px;
+  max-width: 160px;
+  border-radius: 55%;
+}
+/* line 29, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-header--main {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 600;
+}
+/* line 35, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-check {
+  width: 95%;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+/* line 43, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-check #portfolio-check-profile {
+  display: inline-block;
+  width: 22%;
+  cursor: pointer;
+}
+/* line 48, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-check #portfolio-check-skill {
+  display: inline-block;
+  width: 22%;
+  cursor: pointer;
+}
+/* line 53, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-check #portfolio-check-portfolio {
+  display: inline-block;
+  width: 22%;
+  cursor: pointer;
+}
+/* line 58, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-check #portfolio-check-contact {
+  display: inline-block;
+  width: 22%;
+  cursor: pointer;
+}
+/* line 64, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage {
+  width: 92%;
+  height: 87%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+/* line 69, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--profile {
+  padding-top: 50px;
+  width: 85%;
+  margin: 0 auto;
+}
+/* line 73, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--profile #profile-top {
+  font-weight: 600;
+  font-size: 35px;
+  padding-bottom: 18px;
+  text-decoration: underline;
+}
+/* line 79, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--profile .profile-pict {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+/* line 82, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--profile .profile-pict .facepict {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 86, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--profile--area {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+/* line 91, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--profile--namezone {
+  font-size: 24px;
+  background: #f5f5f5;
+  padding: 0.6429rem 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+/* line 99, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--profile--namezonebtm {
+  line-height: 2;
+  padding-left: 10px;
+  font-size: 18px;
+}
+/* line 106, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--skill {
+  padding-top: 50px;
+  width: 85%;
+  margin: 0 auto;
+}
+/* line 110, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--skill #skill-top {
+  font-weight: 600;
+  font-size: 35px;
+  padding-bottom: 18px;
+  text-decoration: underline;
+}
+/* line 116, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--skill--namezone {
+  font-size: 25px;
+  margin-top: 13px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+/* line 122, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--skill--namezonebtm {
+  line-height: 2;
+  padding-left: 10px;
+  font-size: 18px;
+}
+/* line 128, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio {
+  padding-top: 50px;
+  width: 85%;
+  margin: 0 auto;
+}
+/* line 132, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio #portfolio-top {
+  font-weight: 600;
+  font-size: 35px;
+  padding-bottom: 18px;
+  text-decoration: underline;
+}
+/* line 138, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio--form {
+  margin-top: 20px;
+  height: 350px;
+  width: 100%;
+  display: inline-block;
+}
+/* line 143, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio--form--left {
+  height: 200px;
+  width: 47%;
+  display: inline-block;
+  position: absolute;
+}
+/* line 148, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio--form--left .gazou {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 151, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio--form--left--title {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+/* line 156, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio--form--left--text {
+  line-height: 34px;
+}
+/* line 158, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio--form--left--text--text2 {
+  margin-bottom: 30px;
+}
+/* line 163, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio--form--right {
+  margin-left: 490px;
+  width: 47%;
+  display: inline-block;
+  position: relative;
+}
+/* line 168, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio--form--right .gazou {
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 171, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio--form--right--title {
+  font-size: 25px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+/* line 176, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio--form--right--text {
+  line-height: 34px;
+}
+/* line 178, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--portfolio--form--right--text--text2 {
+  margin-bottom: 30px;
+}
+/* line 185, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--contact {
+  padding-top: 50px;
+  width: 85%;
+  margin: 0 auto;
+}
+/* line 189, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--contact #contact-top {
+  font-weight: 600;
+  font-size: 35px;
+  padding-bottom: 18px;
+  text-decoration: underline;
+}
+/* line 195, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--contact--area {
+  font-size: 15px;
+}
+/* line 198, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-toppage--contact--form {
+  margin-top: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+/* line 205, /Users/hidden/projects/hide_portfolio/app/assets/stylesheets/portfolio.scss */
+.portfolio .portfolio-footer {
+  margin-top: 30px;
+}
