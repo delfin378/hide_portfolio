@@ -40,21 +40,25 @@
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
-    .portfolio-check-profile{
+    #portfolio-check-profile{
       display: inline-block;
       width: 22%;
+      cursor: pointer;
     }
-    .portfolio-check-skill{
+    #portfolio-check-skill{
       display: inline-block;
       width: 22%;
+      cursor: pointer;
     }
-    .portfolio-check-product{
+    #portfolio-check-portfolio{
       display: inline-block;
       width: 22%;
+      cursor: pointer;
     }
-    .portfolio-check-contact{
+    #portfolio-check-contact{
       display: inline-block;
       width: 22%;
+      cursor: pointer;
     }
   }
   .portfolio-toppage{
@@ -62,11 +66,11 @@
     height: 87%;
     background-color: #fff;
     margin: 0 auto;
-    &--profile{
+    .portfolio-toppage--profile{
       padding-top: 50px;
       width: 85%;
       margin: 0 auto;
-      &--top{
+      #profile-top{
         font-weight: 600;
         font-size: 35px;
         padding-bottom: 18px;
@@ -96,7 +100,7 @@
     padding-top: 50px;
     width: 85%;
     margin: 0 auto;
-    &--top{
+    #skill-top{
       font-weight: 600;
       font-size: 35px;
       padding-bottom: 18px;
@@ -118,7 +122,7 @@
       padding-top: 50px;
       width: 85%;
       margin: 0 auto;
-      &--top{
+      #portfolio-top{
         font-weight: 600;
         font-size: 35px;
         padding-bottom: 18px;
@@ -139,7 +143,7 @@
           }
         }
         &--right{
-          margin-left: 520px;
+          margin-left: 490px;
           width: 47%;
           display: inline-block;
           position: relative;
@@ -153,7 +157,7 @@
       padding-top: 50px;
       width: 85%;
       margin: 0 auto;
-      &--top{
+      #contact-top{
         font-weight: 600;
         font-size: 35px;
         padding-bottom: 18px;
