@@ -48,7 +48,9 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
+
+
   <<: *default
-  database: hide_portfolio_production
-  username: hide_portfolio
-  password: <%= ENV['HIDE_PORTFOLIO_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
