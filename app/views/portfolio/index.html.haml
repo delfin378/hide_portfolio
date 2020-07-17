@@ -20,6 +20,8 @@
     .portfolio-toppage--profile
       #profile-top
         PROFILE
+      .profile-pict
+        =image_tag "#{"face"}",class:"facepict"
       .portfolio-toppage--profile--area
         Webエンジニア転職活動をしている上林 秀天（うえばやし ひでたか）のポートフォリオサイトです。
       .portfolio-toppage--profile--area
@@ -84,19 +86,41 @@
         PORTFOLIO
       .portfolio-toppage--portfolio--form
         .portfolio-toppage--portfolio--form--left
-          %a{href:"https://github.com/delfin378/memosearch"} 説明文はこちら
+          .portfolio-toppage--portfolio--form--left--title
+            memo-search
+          .portfolio-toppage--portfolio--form--left--text
+            説明文
+            .portfolio-toppage--portfolio--form--left--text--text2
+              %a{href:"https://github.com/delfin378/memosearch"} 説明文はこちらをクリックして下さい。
+          .portfolio-toppage--portfolio--form--left--text
+            デプロイ先
+          .portfolio-toppage--portfolio--form--left--text
+            %a{href:"https://memosearch.herokuapp.com/"}https://memosearch.herokuapp.com/
         .portfolio-toppage--portfolio--form--right
           =image_tag "#{"memosearch1"}",class:"gazou",width:"450px",height:"300px"
       .portfolio-toppage--portfolio--form
         .portfolio-toppage--portfolio--form--left
           =image_tag "#{"Fmarket"}",class:"gazou",width:"450px",height:"300px"
         .portfolio-toppage--portfolio--form--right
-          %a{href:"https://docs.google.com/document/d/1XMkBuJz-3qH9eEixgrpAPlB6QpXMgxo7zT8XetH2Bk0/edit#heading=h.uc9r1bu1xm1f"} ポートフォリオ説明文
+          .portfolio-toppage--portfolio--form--right--title
+            エフマーケット（チーム開発）
+          .portfolio-toppage--portfolio--form--right--text
+            説明文:
+          .portfolio-toppage--portfolio--form--right--text
+            スクール最終課題でチーム開発で行ったアプリです。
+            .portfolio-toppage--portfolio--form--right--text--text2
+              %a{href:"https://docs.google.com/document/d/1XMkBuJz-3qH9eEixgrpAPlB6QpXMgxo7zT8XetH2Bk0/edit#heading=h.uc9r1bu1xm1f"} 以下の説明文はこちらをクリックして下さい。
+          .portfolio-toppage--portfolio--form--right--text
+            デプロイ先
+          .portfolio-toppage--portfolio--form--right--text
+            %a{href:"http://18.176.104.100/"}http://18.176.104.100/
     .portfolio-toppage--contact
       #contact-top
         CONTACT
       .portfolio-toppage--contact--area
         上林 秀天へのお問い合わせは、下記連絡先よりお願いします。
+      .portfolio-toppage--contact--area
+        興味を持って頂けましたら、メールあるいはtwitterよりDM等で連絡をお願いします。
       .portfolio-toppage--contact--form
         .portfolio-toppage--contact--form--left
           メールアドレス
